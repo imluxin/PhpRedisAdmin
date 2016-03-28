@@ -1,9 +1,15 @@
 My Clone
 =========
 
-This repository is cloned from https://github.com/ErikDubbelboer/phpRedisAdmin(https://github.com/ErikDubbelboer/phpRedisAdmin)
+This repository is cloned from https://github.com/ErikDubbelboer/phpRedisAdmin
 
 I'm doing some view optimization now.
+
+
+------------------------------
+
+Origin doc:
+===========
 
 phpRedisAdmin
 =============
