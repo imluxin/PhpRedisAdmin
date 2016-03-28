@@ -184,11 +184,36 @@ if (isset($pagination)) {
 if ($type == 'string') { ?>
 
 <table>
-<tr><td><div class=data><?php echo format_html($value)?></div></td><td><div>
-  <a href="edit.php?s=<?php echo $server['id']?>&amp;d=<?php echo $server['db']?>&amp;type=string&amp;key=<?php echo urlencode($_GET['key'])?>"><img src="images/edit.png" width="16" height="16" title="Edit" alt="[E]"></a>
-</div></td><td><div>
-  <a href="delete.php?s=<?php echo $server['id']?>&amp;d=<?php echo $server['db']?>&amp;type=string&amp;key=<?php echo urlencode($_GET['key'])?>" class="delval"><img src="images/delete.png" width="16" height="16" title="Delete" alt="[X]"></a>
-</div></td></tr>
+<tr>
+  <td>
+    <div class=data><?php echo format_html($value)?></div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+    <div class=data><?php echo print_r(json_decode($value, true))?></div>
+  </td>
+  <td>
+    <div>
+    <a href="edit.php?s=<?php echo $server['id']?>&amp;d=<?php echo $server['db']?>&amp;type=string&amp;key=<?php echo urlencode($_GET['key'])?>">
+      <img src="images/edit.png" width="16" height="16" title="Edit" alt="[E]"></a>
+    </div>
+  </td>
+  <td>
+    <div>
+      <a href="delete.php?s=<?php echo $server['id']?>&amp;d=<?php echo $server['db']?>&amp;type=string&amp;key=<?php echo urlencode($_GET['key'])?>" class="delval"><img src="images/delete.png" width="16" height="16" title="Delete" alt="[X]"></a>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div>
+      <a href="edit.php?s=<?php echo $server['id']?>&amp;d=<?php echo $server['db']?>&amp;type=string&amp;key=<?php echo urlencode($_GET['key'])?>">
+        <img src="images/edit.png" width="16" height="16" title="Edit" alt="[E]"></a>
+      <a href="delete.php?s=<?php echo $server['id']?>&amp;d=<?php echo $server['db']?>&amp;type=string&amp;key=<?php echo urlencode($_GET['key'])?>" class="delval" style="margin-left: 15px;"><img src="images/delete.png" width="16" height="16" title="Delete" alt="[X]"></a>
+    </div>
+  </td>
+</tr>
 </table>
 
 <?php }

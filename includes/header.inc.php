@@ -23,7 +23,7 @@ header('Cache-Control: private');
 
 <meta name=author content="https://github.com/ErikDubbelboer/">
 
-<title><?php echo format_html($server['host'])?> - phpRedisAdmin</title>
+<title>My Workstation - <?php echo format_html($server['host'])?> - phpRedisAdmin</title>
 
 <?php foreach ($page['css'] as $css) { ?>
 <link rel=stylesheet href="css/<?php echo $css; ?>.css?v<?=$version?>" media=all>
